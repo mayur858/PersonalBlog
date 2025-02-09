@@ -1,7 +1,7 @@
-import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./Pages/homepage";
 import BlogList from "./Pages/bloglistpage";
+import AboutPage from "./Pages/aboutpage.jsx"
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/blog-list" element={<BlogList />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
   );
